@@ -265,7 +265,7 @@ label= "SYM"                               ;
 label= "NUM"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃    XXX    ┃     (     ┃     )     ┃     *     ┃    XXX    ┃   ┃    XXX    ┃     ^     ┃    XXX    ┃     %     ┃    XXX    ┃
+//             ┃    XXX    ┃     W     ┃     (     ┃     *     ┃     )     ┃   ┃    XXX    ┃     ^     ┃    XXX    ┃     %     ┃    XXX    ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     1     ┃     2     ┃     3     ┃     4     ┃     5     ┃   ┃     6     ┃     7     ┃     8     ┃     9     ┃     0     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
@@ -276,7 +276,7 @@ label= "NUM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none        &kp LPAR     &kp RPAR      &kp STAR      &none         &none       &kp CARET     &none         &kp PRCNT  &none
+                &none        &kp W        &kp LPAR      &kp STAR      &RPAR         &none       &kp CARET     &none         &kp PRCNT  &none
                 &hml LGUI N1 &hml RALT N2 &hml LSHFT N3 &hml RCTRL N4 &kp N5        &kp N6      &hmr RCTRL N7 &hmr RSHFT N8 &hmr RALT  &hmr RGUI N0
     &kp ESC     &none        &kp FSLH     &kp PLUS      &kp MINUS     &none         &none       &kp EQUAL     &kp COMMA     &kp DOT    &kp FSLH     &kp DQT
                                           &kp ESC       &kp SPACE     &kp TAB       &lt NUM RET &lt SYM BSPC  &lt FUNC DEL
