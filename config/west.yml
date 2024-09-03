@@ -3,8 +3,8 @@ manifest:
     - name: petejohanson
       url-base: https://github.com/petejohanson
   projects:
-    - name: petejohanson
-      remote: zmk
+    - name: zmk
+      remote: zmkfirmware
       revision: feat/pointer-move-scroll
       import: app/west.yml
   self:
