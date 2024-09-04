@@ -261,7 +261,7 @@ label= "NAV"                               ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃    XXX    ┃ BSPC LINE ┃ BSPC WORD ┃ DEL WORD  ┃ DEL LINE  ┃   ┃ PRINT SCR ┃   HOME    ┃    END    ┃    XXX    ┃  CLOSE W  ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    LGUI   ┃   RALT    ┃   RCRL    ┃   LSHFT   ┃    XXX    ┃   ┃   LEFT    ┃   DOWN    ┃    UP     ┃   RIGHT   ┃    APP    ┃
+//             ┃    LGUI   ┃   RALT    ┃   RCTRL   ┃   LSHFT   ┃    XXX    ┃   ┃   LEFT    ┃   DOWN    ┃    UP     ┃   RIGHT   ┃    APP    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    ESC    ┃    UNDO   ┃    CUT    ┃   COPY    ┃   PASTE   ┃    XXX    ┃   ┃    XXX    ┃  PG DOWN  ┃   PG UP   ┃    XXX    ┃    XXX    ┃    XXX    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -387,7 +387,7 @@ label= "MEDIA"                             ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃    XXX    ┃    XXX    ┃    XXX    ┃    XXX    ┃    XXX    ┃   ┃   Clear   ┃    BT0    ┃    BT1    ┃    BT2    ┃ Clear All ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    LGUI   ┃    RALT   ┃   RTCRL   ┃   LSHFT   ┃    XXX    ┃   ┃ PREVIOUS  ┃  VOL DOWN ┃   VOL UP  ┃   NEXT    ┃    MUTE   ┃
+//             ┃    LGUI   ┃    RALT   ┃   RCTRL   ┃   LSHFT   ┃    XXX    ┃   ┃ PREVIOUS  ┃  VOL DOWN ┃   VOL UP  ┃   NEXT    ┃    MUTE   ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃ bootloader┃    UNDO   ┃    CUT    ┃    COPY   ┃   PASTE   ┃    XXX    ┃   ┃    XXX    ┃    XXX    ┃    XXX    ┃    XXX    ┃    XXX    ┃    XXX    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -397,7 +397,7 @@ label= "MEDIA"                             ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &none       &none       &none       &none           &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR_ALL
-                &kp LGUI    &kp RALT    &kp RTCRL   &kp LSHFT   &none           &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   &kp C_MUTE
+                &kp LGUI    &kp RALT    &kp RCTRL   &kp LSHFT   &none           &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   &kp C_MUTE
     &bootloader &undo       &cut        &copy       &paste      &none           &none       &none        &none        &none        &none      &none
                                         &lt MEDIA ESC &lt NUM SPACE &LT NAV TAB &lt MOUSE RET &kp C_PP     &lt FUNC DEL
                         >;
