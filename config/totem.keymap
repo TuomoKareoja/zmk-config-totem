@@ -139,11 +139,13 @@
     behaviors {
         scolon: shift_colon {
             compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         sspace: shift_space {
             compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp UNDER>;
             mods = <(MOD_LSFT)>;
         };
