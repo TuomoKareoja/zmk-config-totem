@@ -202,7 +202,7 @@
                 <&kp>,
                 <&kp>;
         };
-        hmri: homerow_left_index {
+        hmri: homerow_right_index {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
