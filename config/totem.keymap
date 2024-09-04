@@ -50,7 +50,7 @@
                 key-positions = <20 31>;
                 bindings = <&to BASE>;
             };
-            combo_toggle_base {
+            combo_toggle_caps_word {
                 timeout-ms = <100>;
                 layers = <0>;
                 key-positions = <13 16>;
