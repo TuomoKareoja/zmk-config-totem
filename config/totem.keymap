@@ -28,7 +28,7 @@
 #define GAME 7
 #define GAMESWAP 8
 
-&lt: {
+&lt {
     flavor = "hold-preferred";
     tapping-term-ms = <5000>;
     retro-tap;
