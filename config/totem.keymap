@@ -62,6 +62,7 @@
     macros {
         undo: undo {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp Z>
@@ -70,6 +71,7 @@
         };
         cut: cut {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp X>
@@ -78,6 +80,7 @@
         };
         copy: copy {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp C>
@@ -86,6 +89,7 @@
         };
         paste: paste {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp V>
@@ -94,6 +98,7 @@
         };
         bspc_line: bspc_line {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_tap &kp HOME>
@@ -103,6 +108,7 @@
         };
         del_line: del_line {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_tap &kp END>
@@ -112,6 +118,7 @@
         };
         bspc_word: bspc_word {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp BSPC>
@@ -120,6 +127,7 @@
         };
         del_word: del_word {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp DEL>
@@ -128,6 +136,7 @@
         };
         close_w: close_w {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RALT>
                 , <&macro_tap &kp F4>
