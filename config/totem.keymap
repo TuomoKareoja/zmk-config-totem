@@ -319,7 +319,7 @@ label= "NAV"                               ;
                 &none       &bspc_line  &bspc_word  &del_word   &del_line       &kp PSCRN   &kp HOME    &kp END     &none       &close_w
                 &kp LGUI    &kp RALT    &kp RCTRL   &kp LSHFT   &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp K_APP
     &kp ESC     &undo       &cut        &copy       &paste      &none           &none       &kp PG_DN   &kp PG_UP   &none       &none       &none
-                                        &lt MEDIA ESC &lt SYM SPACE &lt NAV TAB &lt MOUSE RET &kp BSPC    &kp DEL
+                                        &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB &lt MOUSE RET &kp BSPC    &kp DEL
                         >;
                 };
 
@@ -444,7 +444,7 @@ label= "MEDIA"                             ;
                 &none       &none       &none       &none       &none           &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR_ALL
                 &kp LGUI    &kp RALT    &kp RCTRL   &kp LSHFT   &none           &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   &kp C_MUTE
     &bootloader &undo       &cut        &copy       &paste      &none           &none       &none        &none        &none        &none      &none
-                                        &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB &lt MOUSE RET &kp C_PP     &lt FUNC DEL
+                                        &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB &lt MOUSE RET &kp C_PP   &lt FUNC DEL
                         >;
                 };
 
