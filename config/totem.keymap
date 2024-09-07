@@ -54,7 +54,7 @@
 #define SCRL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
 #define SCRL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
 // how long until max scroll speed is reached
-&mwh {
+&msc {
   time-to-max-speed-ms = <500>;
 };
 
