@@ -271,7 +271,7 @@
                                 33  34                         \
             >;
             hold-trigger-on-release;
-            bindings = <&mo>, <&scolon>;
+            bindings = <&kp>, <&scolon>;
         };
         sspace: shift_space {
             compatible = "zmk,behavior-mod-morph";
@@ -286,7 +286,7 @@
             retro-tap;
             hold-while-undecided;
             quick-tap-ms = <0>;
-            bindings = <&lt>, <&sspace>;
+            bindings = <&kp>, <&sspace>;
         };
 
         }
