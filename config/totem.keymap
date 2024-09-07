@@ -180,18 +180,7 @@
     };
 
     behaviors {
-        scolon: shift_colon {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp SEMI>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        sspace: shift_space {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp UNDER>;
-            mods = <(MOD_LSFT)>;
-        };
+
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -266,6 +255,18 @@
                 <&kp>,
                 <&kp>;
         };
+        scolon: shift_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&hmr RGUI COLON>, <&kp SEMI>;
+            mods = <(MOD_LSFT)>;
+        };
+        sspace: shift_space {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&lt NUM SPACE>, <&kp UNDER>;
+            mods = <(MOD_LSFT)>;
+        };
 
     };
 
@@ -291,9 +292,9 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E         &kp R         &kp T           &kp Y       &kp U         &kp I       &kp O        &kp P
-                &hml LGUI A &hml RALT S &hml RCTRL D  &hmli LSHFT F &kp G           &kp H       &hmri RSHFT J &hmr RCTRL K &hmr RALT L &hmr RGUI scolon
+                &hml LGUI A &hml RALT S &hml RCTRL D  &hmli LSHFT F &kp G           &kp H       &hmri RSHFT J &hmr RCTRL K &hmr RALT L &scolon
     &kp ESC     &kp Z       &kp X       &kp C         &kp V         &kp B           &kp N       &kp M         &kp COMMA   &kp DOT      &kp FSLH    &kp APOS
-                                        &lt MEDIA ESC &lt NUM sspace &lt NAV TAB &lt MOUSE RET &lt SYM BSPC &lt FUNC DEL
+                                        &lt MEDIA ESC &sspace &lt NAV TAB &lt MOUSE RET &lt SYM BSPC &lt FUNC DEL
                         >;
                 };
 
@@ -318,7 +319,7 @@ label= "NAV"                               ;
                 &none       &bspc_line  &bspc_word  &del_word   &del_line       &kp PSCRN   &kp HOME    &kp END     &none       &close_w
                 &kp LGUI    &kp RALT    &kp RCTRL   &kp LSHFT   &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp K_APP
     &kp ESC     &undo       &cut        &copy       &paste      &none           &none       &kp PG_DN   &kp PG_UP   &none       &none       &none
-                                        &lt MEDIA ESC &lt SYM sspace &lt NAV TAB &lt MOUSE RET &kp BSPC    &kp DEL
+                                        &lt MEDIA ESC &lt SYM SPACE &lt NAV TAB &lt MOUSE RET &kp BSPC    &kp DEL
                         >;
                 };
 
@@ -343,7 +344,7 @@ label= "MOUSE"                             ;
                 &none       &none       &none       &none       &none           &none       &msc SCRL_LEFT  &mmv MOVE_UP     &msc SCRL_RIGHT   &close_w
                 &kp RCTRL   &kp LSHFT   &mkp RCLK   &mkp LCLK   &none           &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none
     &kp ESC     &undo       &cut        &copy       &paste      &none           &none       &msc SCRL_DOWN  &msc SCRL_UP     &none             &none       &none
-                                    &lt MEDIA ESC &lt NUM sspace &lt NAV TAB     &lt MOUSE RET &lt SYM BSPC  &lt FUNC DEL
+                                    &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB     &lt MOUSE RET &lt SYM BSPC  &lt FUNC DEL
                         >;
                 };
 
@@ -393,7 +394,7 @@ label= "NUM"                               ;
                 &none        &kp W        &kp LPAR      &kp STAR       &kp RPAR      &none       &kp CARET      &none         &kp PRCNT    &none
                 &hml LGUI N1 &hml RALT N2 &hml RCTRL N3 &hmli LSHFT N4 &kp N5        &kp N6      &hmri RSHFT N7 &hmr RCTRL N8 &hmr RALT N9 &hmr RGUI N0
     &kp ESC     &none        &kp FSLH     &kp PLUS      &kp MINUS      &none         &none       &kp EQUAL      &kp COMMA     &kp DOT      &kp FSLH     &kp DQT
-                                          &lt MEDIA ESC &lt NUM sspace  &lt NAV TAB   &lt MOUSE RET &lt SYM BSPC  &lt FUNC DEL
+                                          &lt MEDIA ESC &lt NUM SPACE  &lt NAV TAB   &lt MOUSE RET &lt SYM BSPC  &lt FUNC DEL
                         >;
                 };
 
@@ -418,7 +419,7 @@ label= "FUNC"                              ;
                 &kp F10     &kp F7      &kp F8      &kp F9      &none           &none      &none        &none       &none       &none
                 &kp F11     &kp F4      &kp F5      &kp F6      &none           &none      &kp RSHFT    &kp RCTRL   &kp RALT    &kp RGUI
     &kp ESC     &kp F12     &kp F4      &kp F2      &kp F3      &none           &none      &none        &none       &none       &none       &bootloader
-                                        &lt MEDIA ESC &lt NUM sspace &lt NAV TAB &lt MOUSE RET &lt SYM BSPC &lt FUNC DEL
+                                        &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB &lt MOUSE RET &lt SYM BSPC &lt FUNC DEL
                         >;
                 };
 
@@ -443,7 +444,7 @@ label= "MEDIA"                             ;
                 &none       &none       &none       &none       &none           &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR_ALL
                 &kp LGUI    &kp RALT    &kp RCTRL   &kp LSHFT   &none           &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   &kp C_MUTE
     &bootloader &undo       &cut        &copy       &paste      &none           &none       &none        &none        &none        &none      &none
-                                        &lt MEDIA ESC &lt NUM sspace &lt NAV TAB &lt MOUSE RET &kp C_PP     &lt FUNC DEL
+                                        &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB &lt MOUSE RET &kp C_PP     &lt FUNC DEL
                         >;
                 };
 
