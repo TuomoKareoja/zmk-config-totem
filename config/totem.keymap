@@ -66,10 +66,6 @@
     quick-tap-ms = <0>;
 };
 
-&caps_word {
-    continue-list = <UNDERSCORE>;
-};
-
 / {
      combos {
             compatible = "zmk,combos";
@@ -265,7 +261,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&lt NUM SPACE>, <&kp UNDER>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
     };
@@ -294,7 +290,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E         &kp R         &kp T           &kp Y       &kp U         &kp I       &kp O        &kp P
                 &hml LGUI A &hml RALT S &hml RCTRL D  &hmli LSHFT F &kp G           &kp H       &hmri RSHFT J &hmr RCTRL K &hmr RALT L &scolon
     &kp ESC     &kp Z       &kp X       &kp C         &kp V         &kp B           &kp N       &kp M         &kp COMMA   &kp DOT      &kp FSLH    &kp APOS
-                                        &lt MEDIA ESC &sspace &lt NAV TAB &lt MOUSE RET &lt SYM BSPC &lt FUNC DEL
+                                        &lt MEDIA ESC &sspace &lt NAV TAB           &lt MOUSE RET &lt SYM BSPC &lt FUNC DEL
                         >;
                 };
 
