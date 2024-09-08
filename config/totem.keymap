@@ -38,7 +38,6 @@
 #define MOVE_DOWN MOVE_Y(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT MOVE_X(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
-#define U_MOUSE_SCROLL_MAX 100
 &mmv {
     time-to-max-speed-ms = <300>;
     delay-ms = <1>;
@@ -351,9 +350,9 @@ label= "MOUSE"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &none       &none       &none           &none         &msc SCROLL_LEFT &mmv MOVE_UP     &msc SCROLL_RIGHT   &close_w
+                &none       &none       &none       &none       &none           &none         &msc SCRL_LEFT &mmv MOVE_UP     &msc SCRL_RIGHT   &close_w
                 &kp RCTRL   &kp LSHFT   &mkp RCLK   &mkp LCLK   &none           &none         &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none
-    &kp ESC     &undo       &cut        &copy       &paste      &none           &none         &msc SCROLL_DOWN &msc SCROLL_UP     &none             &none       &none
+    &kp ESC     &undo       &cut        &copy       &paste      &none           &none         &msc SCRL_DOWN &msc SCRL_UP     &none             &none       &none
                                     &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB     &lt MOUSE RET &lt SYM BSPC   &lt FUNC DEL
                         >;
                 };
