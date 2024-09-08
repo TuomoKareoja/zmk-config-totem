@@ -33,10 +33,10 @@
 #undef MOVE_DOWN
 #undef MOVE_LEFT
 #undef MOVE_RIGHT
-#define MOVE_UP MOVE_VERT(-1400)
-#define MOVE_DOWN MOVE_VERT(1400)
-#define MOVE_LEFT MOVE_HOR(-1400)
-#define MOVE_RIGHT MOVE_HOR(1400)
+#define MOVE_UP MOVE_Y(-1400)
+#define MOVE_DOWN MOVE_Y(1400)
+#define MOVE_LEFT MOVE_X(-1400)
+#define MOVE_RIGHT MOVE_X(1400)
 // #define U_MOUSE_SCROLL_MAX 100
 // #undef SCRL_UP
 // #undef SCRL_DOWN
