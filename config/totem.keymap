@@ -49,7 +49,7 @@
 
 &lt {
     flavor = "hold-preferred";
-    tapping-term-ms = <2000>;
+    tapping-term-ms = <0>;
     retro-tap;
     quick-tap-ms = <0>;
 };
