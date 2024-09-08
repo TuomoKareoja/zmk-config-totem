@@ -39,12 +39,12 @@
 #define MOVE_LEFT MOVE_X(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
 &mmv {
-    time-to-max-speed-ms = <300>;
-    delay-ms = <1>;
+    time-to-max-speed-ms = <400>;
+    delay-ms = <0>;
 };
 &msc {
     time-to-max-speed-ms = <100>;
-    delay-ms = <1>;
+    delay-ms = <0>;
 };
 
 &lt {
@@ -278,7 +278,6 @@
         };
 
     };
-
 
         keymap {
                 compatible = "zmk,keymap";
