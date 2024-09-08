@@ -51,7 +51,6 @@
     flavor = "hold-preferred";
     tapping-term-ms = <5000>;
     retro-tap;
-    hold-while-undecided;
     quick-tap-ms = <0>;
 };
 
