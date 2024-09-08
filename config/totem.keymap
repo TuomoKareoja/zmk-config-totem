@@ -29,7 +29,7 @@
 #define GAMESWAP 8
 
 // Mouse settings
-#define U_MOUSE_MOVE_MAX 1200
+#define U_MOUSE_MOVE_MAX 1300
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
