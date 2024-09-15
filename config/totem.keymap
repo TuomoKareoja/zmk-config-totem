@@ -96,7 +96,7 @@
             combo_dquote_two {
                 timeout-ms = <150>;
                 layers = <BASE NUM SYM>;
-                key-positions = <3 4>;
+                key-positions = <2 3>;
                 bindings = <&kp DQT>;
             };
     };
