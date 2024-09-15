@@ -75,28 +75,16 @@
                 key-positions = <11 12 13>;
                 bindings = <&caps_word>;
             };
-            combo_quote_one {
+            combo_quote {
                 timeout-ms = <150>;
                 layers = <BASE NUM SYM>;
                 key-positions = <6 16>;
                 bindings = <&kp APOS>;
             };
-            combo_quote_two {
-                timeout-ms = <150>;
-                layers = <BASE NUM SYM>;
-                key-positions = <6 7>;
-                bindings = <&kp APOS>;
-            };
-            combo_dquote_one {
+            combo_dquote {
                 timeout-ms = <150>;
                 layers = <BASE NUM SYM>;
                 key-positions = <3 13>;
-                bindings = <&kp DQT>;
-            };
-            combo_dquote_two {
-                timeout-ms = <150>;
-                layers = <BASE NUM SYM>;
-                key-positions = <2 3>;
                 bindings = <&kp DQT>;
             };
     };
