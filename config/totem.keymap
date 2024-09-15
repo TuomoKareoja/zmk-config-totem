@@ -42,9 +42,18 @@
     time-to-max-speed-ms = <400>;
     delay-ms = <1>;
 };
+#define U_MOUSE_SCROLL_MAX 100
+#undef SCROLL_UP
+#undef SCROLL_DOWN
+#undef SCROLL_LEFT
+#undef SCROLL_RIGHT
+#define SCROLL_UP SCROLL_Y(U_MOUSE_SCROLL_MAX)
+#define SCROLL_DOWN SCROLL_Y(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_LEFT SCROLL_X(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_RIGHT SCROLL_X(U_MOUSE_SCROLL_MAX)
 &msc {
     time-to-max-speed-ms = <100>;
-    delay-ms = <1>;
+    delay-ms = <0>;
 };
 
 &lt {
@@ -392,10 +401,10 @@ label= "MOUSE"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &none       &none       &none           &none         &msc SCRL_LEFT &mmv MOVE_UP     &msc SCRL_RIGHT   &close_w
-                &kp RCTRL   &kp LSHFT   &mkp RCLK   &mkp LCLK   &none           &none         &mmv MOVE_LEFT &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none
-    &kp ESC     &undo       &cut        &copy       &paste      &none           &none         &msc SCRL_DOWN &msc SCRL_UP     &none             &none       &none
-                                    &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB     &lt MOUSE RET &lt SYM BSPC   &lt FUNC DEL
+                &none       &none       &none       &none       &none           &none         &msc SCROLL_LEFT &mmv MOVE_UP     &msc SCROLL_RIGHT &close_w
+                &kp RCTRL   &kp LSHFT   &mkp RCLK   &mkp LCLK   &none           &none         &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none
+    &kp ESC     &undo       &cut        &copy       &paste      &none           &none         &msc SCROLL_DOWN &msc SCROLL_UP   &none             &none       &none
+                                    &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB     &lt MOUSE RET &lt SYM BSPC     &lt FUNC DEL
                         >;
                 };
 
