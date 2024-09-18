@@ -76,13 +76,13 @@
                 bindings = <&caps_word>;
             };
             combo_quote {
-                timeout-ms = <150>;
+                timeout-ms = <100>;
                 layers = <BASE NUM SYM>;
                 key-positions = <6 16>;
                 bindings = <&kp APOS>;
             };
             combo_dquote {
-                timeout-ms = <150>;
+                timeout-ms = <100>;
                 layers = <BASE NUM SYM>;
                 key-positions = <3 13>;
                 bindings = <&kp DQT>;
