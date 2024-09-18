@@ -216,7 +216,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             retro-tap;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <110>;
             quick-tap-ms = <0>;
             require-prior-idle-ms = <50>;
             hold-trigger-key-positions = <                     \
@@ -234,7 +234,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             retro-tap;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <110>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <50>;
             hold-trigger-key-positions = <                     \
