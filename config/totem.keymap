@@ -235,7 +235,7 @@
             flavor = "balanced";
             retro-tap;
             tapping-term-ms = <120>;
-            quick-tap-ms = <155>;
+            quick-tap-ms = <150>;
             require-prior-idle-ms = <50>;
             hold-trigger-key-positions = <                     \
                     0   1   2   3   4                          \
