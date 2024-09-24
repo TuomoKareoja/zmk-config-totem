@@ -341,7 +341,7 @@ label= "NAV"                               ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃    LGUI   ┃   RALT    ┃   RCTRL   ┃   LSHFT   ┃    XXX    ┃   ┃   LEFT    ┃   DOWN    ┃    UP     ┃   RIGHT   ┃    APP    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    ESC    ┃    UNDO   ┃    CUT    ┃   COPY    ┃   PASTE   ┃    XXX    ┃   ┃    XXX    ┃  PG DOWN  ┃   PG UP   ┃    XXX    ┃    XXX    ┃    XXX    ┃
+// ┃    ESC    ┃    UNDO   ┃    CUT    ┃   COPY    ┃   PASTE   ┃    XXX    ┃   ┃    XXX    ┃  PG DOWN  ┃   PG UP   ┃ KEYREPEAT ┃    XXX    ┃    XXX    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃    ESC    ┃   SPACE   ┃    TAB    ┃   ┃   ENTER   ┃   BSPC    ┃    DEL    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -350,7 +350,7 @@ label= "NAV"                               ;
 
                 &none       &bspc_line  &bspc_word  &del_word   &del_line       &kp PSCRN   &kp HOME    &kp END     &none       &close_w
                 &kp LGUI    &kp RALT    &kp RCTRL   &kp LSHFT   &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp K_APP
-    &kp ESC     &undo       &cut        &copy       &paste      &none           &none       &kp PG_DN   &kp PG_UP   &none       &key_repeat  &none
+    &kp ESC     &undo       &cut        &copy       &paste      &none           &none       &kp PG_DN   &kp PG_UP   &key_repeat &none        &none
                                         &lt MEDIA ESC &lt NUM SPACE &lt NAV TAB &lt MOUSE RET &kp BSPC    &kp DEL
                         >;
                 };
