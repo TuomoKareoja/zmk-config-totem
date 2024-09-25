@@ -94,8 +94,8 @@
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings
                 = <&kp T &kp U &kp O &kp M &kp O>
                 , <&kp DOT>
