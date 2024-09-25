@@ -420,7 +420,7 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &atemail 0 AT &kp HASH    &kp STAR    &kp PIPE        &kp AMPS    &kp CARET   &kp DLLR    &kp PRCNT   &none
+                &none       &atemail AT 0 &kp HASH    &kp STAR    &kp PIPE        &kp AMPS    &kp CARET   &kp DLLR    &kp PRCNT   &none
                 &kp GRAVE   &kp LBKT    &kp LPAR    &kp RPAR    &kp RBKT        &kp TILDE   &kp RBRC    &kp LBRC    &kp EXCL    &kp SEMI
     &kp ESC     &none       &kp BSLH    &kp PLUS    &kp MINUS   &none           &none       &kp EQUAL   &kp LT      &kp GT      &kp QMARK   &kp DQT
                                         &lt MEDIA ESC &kp UNDER &lt NAV TAB     &lt MOUSE RET &lt SYM BSPC  &lt FUNC DEL
