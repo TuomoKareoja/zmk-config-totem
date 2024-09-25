@@ -51,7 +51,7 @@
 
 &mt {
     tapping-term-ms = <250>;
-}
+};
 
 / {
      combos {
