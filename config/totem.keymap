@@ -49,6 +49,10 @@
     quick-tap-ms = <0>;
 };
 
+&mt {
+    tapping-term-ms = <250>;
+}
+
 / {
      combos {
             compatible = "zmk,combos";
@@ -91,6 +95,21 @@
     };
 
     macros {
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp T &kp U &kp O &kp M &kp O>
+                , <&kp DOT>
+                , <&kp K &kp A &kp R &kp E &kp O &kp J &kp A>
+                , <&kp AT>
+                , <&kp G &kp M &kp A &kp I &kp L>
+                , <&kp DOT>
+                , <&kp C &kp O &kp M>
+                ;
+        };
         undo: undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -398,7 +417,7 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &kp AT      &kp HASH    &kp STAR    &kp PIPE        &kp AMPS    &kp CARET   &kp DLLR    &kp PRCNT   &none
+                &none       &mt email AT      &kp HASH    &kp STAR    &kp PIPE        &kp AMPS    &kp CARET   &kp DLLR    &kp PRCNT   &none
                 &kp GRAVE   &kp LBKT    &kp LPAR    &kp RPAR    &kp RBKT        &kp TILDE   &kp RBRC    &kp LBRC    &kp EXCL    &kp SEMI
     &kp ESC     &none       &kp BSLH    &kp PLUS    &kp MINUS   &none           &none       &kp EQUAL   &kp LT      &kp GT      &kp QMARK   &kp DQT
                                         &lt MEDIA ESC &kp UNDER &lt NAV TAB     &lt MOUSE RET &lt SYM BSPC  &lt FUNC DEL
